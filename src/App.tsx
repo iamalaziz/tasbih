@@ -5,10 +5,12 @@ import DataProvider from './context/context';
 function App() {
   return (
     <div className="App">
-      <DataProvider>
-        <Header />
-        <Controls />
-      </DataProvider>
+      <div>
+        <DataProvider>
+          <Header />
+          <Controls />
+        </DataProvider>
+      </div>
     </div>
   );
 }
