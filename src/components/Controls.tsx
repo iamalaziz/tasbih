@@ -3,9 +3,9 @@ import { CounterContext } from '../context/context';
 
 const Controls = () => {
   const { increment, decrement } = useContext(CounterContext);
+
   return (
     <Fragment>
-      
       <div id="controls" className="flex flex-col">
         <button
           onClick={() => increment()}

@@ -8,7 +8,7 @@ import React, {
 import { CounterContext } from '../context/context';
 
 const Header = () => {
-  const { count, setSelect, setCount } = useContext(CounterContext);
+  const { count, setSelect, setCount, word } = useContext(CounterContext);
   const [isEditing, setIsEditing] = useState(false);
   const inputRef = useRef<any>();
 
@@ -36,7 +36,7 @@ const Header = () => {
       setCount(0);
     }
   };
-  console.log(isEditing);
+
   return (
     <Fragment>
       <header className="flex justify-center items-center font-medium mb-6">
@@ -95,7 +95,12 @@ const Header = () => {
           className="w-full appearance-none outline-none bg-background text-9xl "
         />
       ) : (
-        <h1 className="text-9xl text-center my-[43px]">{count}</h1>
+        <div className='animate-[fadein_0.5s_ease-in]'>
+          <h1 className="animate-[fadein_0.5s_ease-in] text-9xl text-center my-[43px]">
+            {count}
+          </h1>
+          <p className='text-center mb-4 max-w-lg'>{word}</p>
+        </div>
       )}
     </Fragment>
   );

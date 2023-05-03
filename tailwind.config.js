@@ -17,6 +17,15 @@ module.exports = {
       fontFamily: {
         heebo: ['Heebo'],
       },
+      keyframes: {
+        'fadein': {
+          '0%, 100%': { opacity: '0' },
+          '50%': { opacity: '1' },
+        },
+        animation: {
+          fadeIn: 'fadein .5s ease-in infinite',
+        },
+      },
     },
   },
   plugins: [],
