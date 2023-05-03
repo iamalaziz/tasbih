@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="absolute bottom-4 ">
-      <p className="text-text-dark">
+    <footer className="absolute bottom-4 left-0 right-0">
+      <p className="text-text-dark text-center">
         Made By
         <a
           className="underline pl-1"

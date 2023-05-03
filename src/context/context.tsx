@@ -17,14 +17,14 @@ const DataProvider: React.FC<TProps> = ({ children }) => {
       setWord('Bismillah');
     } else if (count % 100 === 0) {
       setWord(
-        "La ilaha illalohu vahdahu-la-sharika lah lahul mulku va lahul hamd va huwa'laa qulli shay'in qodir va ilahi nasır."
+        "La ilaha illallahu, wandahu la-sharika lahu, lahul-mulku wa lahul-hamdu, wa huwa 'ala kulli sha'in qodir."
       );
     } else if (num === 0 && remainder > 0) {
-      setWord('Subhan Allah');
+      setWord('Subhanallah');
     } else if (num === 1 && remainder > 0) {
       setWord('Alhamdulillah');
     } else if (num === 2 && remainder > 0) {
-      setWord('Allahu Akbar');
+      setWord('Allahu akbar');
     }
   }, [count]);
 

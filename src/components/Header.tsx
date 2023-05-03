@@ -99,7 +99,7 @@ const Header = () => {
           <h1 className="animate-[fadein_0.5s_ease-in] text-9xl text-center my-[43px]">
             {count}
           </h1>
-          <p className='text-center mb-4 max-w-lg'>{word}</p>
+          <p className='text-center mb-4 max-w-lg px-4 font-light'>{word}</p>
         </div>
       )}
     </Fragment>
